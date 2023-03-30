@@ -34,7 +34,7 @@ const Header = () => {
         <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
         <Link href="/contact">Contact Me</Link>
-        <Link href="/">
+        <Link href="https://github.com/Anandpandey0/">
           <p className="hover:bg-[#a681cc] rounded-full p-2 px-4  flex items-center">
             <CgGitFork size="1.5rem" />
             <AiOutlineStar size="1.5rem" />
@@ -56,7 +56,7 @@ const Header = () => {
               <Link href="/about">About</Link>
               <Link href="/projects">Projects</Link>
               <Link href="/contact">Contact Me</Link>
-              <Link href="/">
+              <Link href="https://github.com/Anandpandey0/">
                 <p className=" rounded-full py-2 flex items-center w-fit text-sm">
                   <span>Star My Github</span>
                   {/* <CgGitFork size="1.5rem" /> */}
