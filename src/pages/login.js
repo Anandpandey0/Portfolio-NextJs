@@ -26,10 +26,10 @@ const Login = () => {
   //     </div>
   //   );
   // }
-  // const signInHandler = async () => {
-  //   await signIn("google");
-  //   router.push("/");
-  // };
+  const signInHandler = async () => {
+    await signIn("google");
+    router.push("/");
+  };
   return (
     <>
       <Head>
@@ -39,7 +39,7 @@ const Login = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {/* <div className="bg-[#a681cc] h-[80vh] flex  flex-col lg:flex-row overflow-x-clip">
+      <div className="bg-[#a681cc] h-[80vh] flex  flex-col lg:flex-row overflow-x-clip">
         <div className="lg:w-1/2 text-white text-center my-auto">
           <h1 className="text-3xl mt-20 font-semibold">
             Welcome!! {session && session.user.name}
@@ -66,7 +66,7 @@ const Login = () => {
             <Image src={loginbanner} alt="" fill className="object-contain " />
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="flex mt-auto">
         <Footer />
       </div>
