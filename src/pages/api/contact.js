@@ -1,5 +1,5 @@
 import { connect } from "../../../utils/db";
-import Contact from "../../../models/contact";
+import Contact from "../../../models/Contact";
 
 export default async function contactMe(req, res) {
   const { name, email, country, phone, subject, message } = req.body;
