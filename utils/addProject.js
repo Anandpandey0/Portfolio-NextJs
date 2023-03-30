@@ -9,8 +9,6 @@ async function handleAddProject(name, img, desc, github, demo) {
 
   const data = await response.json();
 
-  //   console.log(data.exists);
-
   return data;
 }
 

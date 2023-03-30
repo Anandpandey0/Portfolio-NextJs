@@ -29,11 +29,11 @@ const Header = () => {
           className="cursor-pointer"
         />
       </div>
-      <div className="navbar-items hidden lg:flex justify-evenly lg:w-3/5 xl:w-2/5 items-center text-xl flex-wrap gap-1 ">
+      <div className="navbar-items hidden lg:flex justify-evenly lg:w-3/5 xl:w-2/5 items-center text-xl flex-wrap gap-1 lg:text-2xl">
         <Link href="/">Home</Link>
-        <Link href="/">About</Link>
+        <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
-        <Link href="/">Contact Me</Link>
+        <Link href="/contact">Contact Me</Link>
         <Link href="/">
           <p className="hover:bg-[#a681cc] rounded-full p-2 px-4  flex items-center">
             <CgGitFork size="1.5rem" />
@@ -51,11 +51,11 @@ const Header = () => {
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px">Portfolio Website</DrawerHeader>
           <DrawerBody>
-            <div className="flex flex-col  h-1/2 justify-evenly">
+            <div className="flex flex-col  h-1/2 justify-evenly text-xl lg:text-2xl">
               <Link href="/">Home</Link>
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
               <Link href="/projects">Projects</Link>
-              <Link href="/">Contact Me</Link>
+              <Link href="/contact">Contact Me</Link>
               <Link href="/">
                 <p className=" rounded-full py-2 flex items-center w-fit text-sm">
                   <span>Star My Github</span>

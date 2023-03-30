@@ -2,7 +2,6 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import hero from "../images/hero-icon.svg";
 import banner from "../images/banner.svg";
-import weblogo from "../images/web.PNG";
 import Footer from "./Footer";
 const FrontPage = () => {
   const [animate, setAnimate] = useState(false);
@@ -51,7 +50,7 @@ const FrontPage = () => {
           </p>
         </div>
       </div>
-      <div className="experience  w-[90%]   flex-col lg:flex-row  rounded-2xl lg:h-[100vh] mx-auto z-[999]   mt-[-8rem] bg-white  flex">
+      {/* <div className="experience  w-[90%]   flex-col lg:flex-row  rounded-2xl lg:h-[100vh] mx-auto z-[999]   mt-[-8rem] bg-white  flex">
         <div className="lg:w-1/2   lg:h-full h-fit border-x-2 border-y-2 border-solid border-gray-300 p-16  flex flex-col items-center text-lg rounded-l-xl">
           <div className="logo    ">
             <Image src={weblogo} alt="web developer" />
@@ -96,7 +95,7 @@ const FrontPage = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </>
   );

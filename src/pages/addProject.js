@@ -5,18 +5,8 @@ import React, { useEffect, useState } from "react";
 import handleAddProject from "../../utils/addProject";
 
 const AddProject = () => {
-  const { data: session } = useSession();
   const router = useRouter();
-  useEffect(() => {
-    if (session) {
-      if (session.user.email !== "anand.pandey1052@gmail.com") {
-        // console.log(typeof session.user.email);
-        router.push("/login");
-      }
-    } else {
-      router.push("/login");
-    }
-  }, [session, router]);
+  const { data: session } = useSession();
 
   const [name, setName] = useState("");
   const [img, setImg] = useState("");
@@ -27,7 +17,7 @@ const AddProject = () => {
   const addProjectHandler = async (e) => {
     e.preventDefault();
     await handleAddProject(name, img, desc, github, demo);
-    console.log("Added");
+    // console.log("Added");
     setName("");
     setImg("");
     setDesc("");
