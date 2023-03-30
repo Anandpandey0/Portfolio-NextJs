@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin, AiFillMail } from "react-icons/ai";
-import Head from "next/head";
 
 const Footer = () => {
   return (

@@ -1,10 +1,10 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Timer from "@/components/timer";
+
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import banner from "../images/about-banner.PNG";
+import banner from "../../public/banner.svg";
 
 const About = ({ skills }) => {
   return (
@@ -34,11 +34,11 @@ const About = ({ skills }) => {
           <Image src={banner} alt="banner-photo" />
         </div>
       </div>
-      <h1 className="text-center text-4xl font-semibold">
+      <h1 className="text-center text-4xl font-semibold pt-8">
         Professional <span className="text-[#a681cc]">Skilset</span>{" "}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-4 my-4 pt-10">
-        {skills.map((skill) => (
+        {/* {skills.map((skill) => (
           <div
             className="border-4 border-solid border-red flex justify-center hover:border-[#915ac8] transform transition duration-400 ease-in-out hover:scale-105"
             key={skill._id}
@@ -52,7 +52,7 @@ const About = ({ skills }) => {
               />
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
       <div className="mt-auto">
         <Footer />
@@ -61,13 +61,13 @@ const About = ({ skills }) => {
   );
 };
 
-export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/getSkills");
-  const skills = await res.json();
-  return {
-    props: {
-      skills,
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const res = await fetch("http://localhost:3000/api/getSkills");
+//   const skills = await res.json();
+//   return {
+//     props: {
+//       skills,
+//     },
+//   };
+// }
 export default About;

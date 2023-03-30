@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logo from "../images/logo.png";
+import logo from "../../public/logo.png";
 import { CgGitFork } from "react-icons/cg";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiMenu } from "react-icons/bi";

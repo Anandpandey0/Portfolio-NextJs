@@ -23,7 +23,7 @@ const Timer = ({ endTime }) => {
     const interval = setInterval(() => getTime(deadline), 1000);
 
     return () => clearInterval(interval);
-  }, [getTime]); //
+  }, []); //
 
   return (
     <div className="timer flex mt-4 justify-evenly w-full  text-white">

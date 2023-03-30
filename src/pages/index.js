@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import Header from "../components/Header";
 import FrontPage from "../components/FrontPage";
-import { Scrollbars } from "rc-scrollbars";
+
 // import "rc-scrollbar/assets/index.css";
 
 export default function Home() {

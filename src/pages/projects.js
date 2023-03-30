@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
 import Image from "next/image";
 import React from "react";
-import hero from "../images/hero-icon.svg";
+
 import { AiFillGithub, AiFillLock } from "react-icons/ai";
-import { BsDisplay, BsFillLockFill } from "react-icons/bs";
-import lock from "../images/lock.png";
+import { BsDisplay } from "react-icons/bs";
+import lock from "../../public/lock.png";
 
 import Head from "next/head";
 
@@ -39,7 +39,7 @@ const Projects = ({ projects }) => {
       <Header />
 
       <div className="grid xl:grid-cols-3 lg:grid-cols-2   gap-4 lg:ml-20  ">
-        {projects.map((project) => (
+        {/* {projects.map((project) => (
           <div
             className="border-solid border-4  cursor-pointer hover:border-[#a681cc]  lg:w-5/6 w-[90%] h-fit md:h-[100vh]  p-4   block mx-auto shadow-md transition-shadow duration-500 hover:shadow-lg relative"
             key={project._id}
@@ -76,7 +76,7 @@ const Projects = ({ projects }) => {
               </div>
             </div>
           </div>
-        ))}
+        ))} */}
 
         <div className="border-solid border-4  cursor-pointer hover:border-[#a681cc]  lg:w-5/6 w-[90%] h-fit md:h-[100vh]  p-4   block mx-auto shadow-md transition-shadow duration-500 hover:shadow-lg relative">
           <div className="h-[25vh]  w-full p-2 relative ">
@@ -163,13 +163,13 @@ const Projects = ({ projects }) => {
     </div>
   );
 };
-export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/getProjects");
-  const projects = await res.json();
-  return {
-    props: {
-      projects,
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const res = await fetch("http://localhost:3000/api/getProjects");
+//   const projects = await res.json();
+//   return {
+//     props: {
+//       projects,
+//     },
+//   };
+// }
 export default Projects;

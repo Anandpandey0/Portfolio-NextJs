@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Head from "next/head";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   const form = useRef();
@@ -171,6 +172,9 @@ const Contact = () => {
           </div>
         </section>
       </form>
+      <div className="mt-auto">
+        <Footer />
+      </div>
     </>
   );
 };

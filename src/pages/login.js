@@ -2,7 +2,7 @@ import React from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import Header from "../components/Header";
 import Image from "next/image";
-import loginbanner from "../images/loginbanner.PNG";
+import loginbanner from "../../public/loginbanner.png";
 import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/router";
 import Footer from "@/components/Footer";

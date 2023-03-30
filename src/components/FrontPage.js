@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import hero from "../images/hero-icon.svg";
-import banner from "../images/banner.svg";
+import hero from "../../public/hero-icon.svg";
+import banner from "../../public/banner.svg";
 import Footer from "./Footer";
 const FrontPage = () => {
   const [animate, setAnimate] = useState(false);
