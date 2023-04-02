@@ -41,12 +41,13 @@ const FrontPage = () => {
             Hi, I &apos; m Anand Pandey. Nice to meet you.
           </h1>
           <p className="mt-10 lg:text-lg text-base   ">
-            Since beginning my journey as a freelance designer over 11 years
-            ago, I &apos; ve done remote work for agencies, consulted for
-            startups, and collaborated with talented people to create digital
-            products for both business and consumer use. I &apos; m quietly
-            confident, naturally curious, and perpetually working on improving
-            my chops one design problem at a time.
+            I am a final year B.Tech student . I have started my web dev journey
+            3 years ago. I have done 1 internship of about 6 months as a
+            Software Developer Intern in Diginique Techlabs. In this web dev
+            journey I have created multiple projects(major and minor both). All
+            the Major projects are listed on my project section. I am good at
+            making web apps clone. I also do problem solving using C++ as a
+            primary language.
           </p>
         </div>
       </div>

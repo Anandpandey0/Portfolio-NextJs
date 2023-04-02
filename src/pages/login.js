@@ -11,21 +11,7 @@ import Head from "next/head";
 const Login = () => {
   const { data: session } = useSession();
   const router = useRouter();
-  // if (session) {
-  //   return (
-  //     <div>
-  //       <p>Welcome , {session.user.name}</p>
-  //       <button onClick={() => signOut()}>Sign Out</button>
-  //     </div>
-  //   );
-  // } else {
-  //   return (
-  //     <div>
-  //       <p>You are not logged in</p>
-  //       <button onClick={() => signIn("google")}>Sign In</button>
-  //     </div>
-  //   );
-  // }
+
   const signInHandler = async () => {
     await signIn("google");
     router.push("/");
