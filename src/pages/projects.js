@@ -84,47 +84,6 @@ const Projects = ({ projects }) => {
           </div>
 
           <h1 className="pt-8 mb-4 text-center font-semibold text-2xl">
-            Notion Clone
-          </h1>
-          <div className="flex flex-col h-1/2  justify-between  ">
-            <p className="p-2 text-center xl:h-[328px]">
-              Notion clone web app is a productivity tool that allows users to
-              sign in and sign up, take notes, manage to-do lists, and add new
-              pages. The app features a sleek and intuitive user interface that
-              &apos; s easy to navigate. The app &apos;s note-taking feature
-              enables users to quickly jot down their thoughts and ideas, while
-              the add tasks functionality helps them manage their tasks
-              efficiently. Overall, Notion clone web app is a versatile and
-              powerful productivity tool that can help users stay organized and
-              improve their productivity.
-            </p>
-            <div className="flex items-center justify-center gap-10 w-full flex-wrap mb-2">
-              <button
-                className="flex items-center bg-black p-2 px-4 text-white cursor-pointer  "
-                disabled
-              >
-                <AiFillLock size="1.5rem" className="mx-2" /> Github
-              </button>
-
-              <button
-                className="flex items-center bg-black p-2 px-4 text-white cursor-pointer "
-                disabled
-              >
-                <AiFillLock size="1.5rem" className="mx-2" /> Demo
-              </button>
-            </div>
-            <div className="text-[#a681cc]  text-center mt-2 font-bold text-xl">
-              Will Open After:
-            </div>
-            <Timer endTime="April, 15, 2023" />
-          </div>
-        </div>
-        <div className="border-solid border-4  cursor-pointer hover:border-[#a681cc]  lg:w-5/6 w-[90%] h-fit md:h-[100vh]  p-4   block mx-auto shadow-md transition-shadow duration-500 hover:shadow-lg relative">
-          <div className="h-[25vh]  w-full p-2 relative ">
-            <Image src={lock} alt="" fill className="object-contain " />
-          </div>
-
-          <h1 className="pt-8 mb-4 text-center font-semibold text-2xl">
             Messenger Clone
           </h1>
           <div className="flex flex-col h-1/2  justify-between  ">
