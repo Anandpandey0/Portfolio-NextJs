@@ -9,25 +9,9 @@ import Head from "next/head";
 
 import Link from "next/link";
 import Timer from "@/components/timer";
+
 // import "react-device-frameset/dist/styles/marvel-devices.min.css";
 const Projects = ({ projects }) => {
-  function trimText(text) {
-    // Split the text into an array of words
-    const words = text.split(" ");
-
-    // Check if the number of words is greater than 40
-    if (words.length > 80) {
-      // Trim the array to 40 words
-      words.splice(40, words.length - 80);
-
-      // Join the array back into a string with ellipsis
-      text = words.join(" ") + "...";
-    }
-
-    // Return the trimmed text
-    return text;
-  }
-
   return (
     <div>
       <Head>
@@ -122,7 +106,7 @@ const Projects = ({ projects }) => {
     </div>
   );
 };
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(
     "https://anandpandey-portfolio.vercel.app/api/getProjects"
   );
