@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Image from "next/image";
-import React from "react";
 
 import { AiFillGithub, AiFillLock } from "react-icons/ai";
 import { BsDisplay } from "react-icons/bs";
@@ -28,6 +27,7 @@ const Projects = ({ projects }) => {
     // Return the trimmed text
     return text;
   }
+
   return (
     <div>
       <Head>
@@ -122,7 +122,7 @@ const Projects = ({ projects }) => {
     </div>
   );
 };
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(
     "https://anandpandey-portfolio.vercel.app/api/getProjects"
   );
