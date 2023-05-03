@@ -99,7 +99,7 @@ const Projects = ({ projects }) => {
             <div className="text-[#a681cc]  text-center mt-2 font-bold text-xl">
               Will Open After:
             </div>
-            <Timer endTime="April, 30, 2023" />
+            <Timer endTime="May, 30, 2023" />
           </div>
         </div>
       </div>
