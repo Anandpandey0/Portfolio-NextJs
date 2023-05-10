@@ -5,11 +5,13 @@ import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps, session }) {
   return (
-    <SessionProvider session={session}>
-      <ChakraProvider>
-        <Component {...pageProps} />
-        <Analytics />
-      </ChakraProvider>
-    </SessionProvider>
+    <>
+      <SessionProvider session={session}>
+        <ChakraProvider>
+          <Component {...pageProps} />
+        </ChakraProvider>
+      </SessionProvider>
+      <Analytics />
+    </>
   );
 }
