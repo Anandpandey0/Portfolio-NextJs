@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 export default function App({ Component, pageProps, session }) {
   return (
     <>
-      {/* there */}
+      {/* there1 */}
       <SessionProvider session={session}>
         <ChakraProvider>
           <Component {...pageProps} />
