@@ -96,10 +96,10 @@ const Projects = ({ projects }) => {
                 <AiFillLock size="1.5rem" className="mx-2" /> Demo
               </button>
             </div>
-            <div className="text-[#a681cc]  text-center mt-2 font-bold text-xl">
+            {/* <div className="text-[#a681cc]  text-center mt-2 font-bold text-xl">
               Will Open After:
             </div>
-            <Timer endTime="June, 30, 2023" />
+            <Timer endTime="June, 30, 2023" /> */}
           </div>
         </div>
       </div>
