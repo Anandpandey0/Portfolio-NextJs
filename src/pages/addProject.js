@@ -17,7 +17,7 @@ const AddProject = () => {
   const addProjectHandler = async (e) => {
     e.preventDefault();
     await handleAddProject(name, img, desc, github, demo);
-    // console.log("Added");
+    console.log("Added");
     setName("");
     setImg("");
     setDesc("");

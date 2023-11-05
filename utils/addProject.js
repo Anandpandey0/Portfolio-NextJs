@@ -1,6 +1,4 @@
 async function handleAddProject(name, img, desc, github, demo) {
-  // const salt = await bcrypt.genSalt(10);
-  // const hashedPassword = await bcrypt.hash(password, salt);
   const response = await fetch("/api/addProjects", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -8,6 +6,7 @@ async function handleAddProject(name, img, desc, github, demo) {
   });
 
   const data = await response.json();
+  console.log("data" + data);
 
   return data;
 }

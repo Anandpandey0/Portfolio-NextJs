@@ -52,11 +52,17 @@ const Projects = ({ projects }) => {
                     <AiFillGithub size="1.5rem" className="mx-2" /> Github
                   </button>
                 </Link>
-                <Link href={project.demo} target="_blank">
-                  <button className="flex items-center bg-[#a681cc] p-2 px-4 text-white hover:bg-[#9662cb]">
-                    <BsDisplay size="1.5rem" className="mx-2" /> Demo
-                  </button>
-                </Link>
+                {/* {console.log(project.name + ":" + project.demo.length)} */}
+                {/* {projects.demo && projects.demo.length > 0
+                  ? console.log(projects.demo.length)
+                  : console.log("0")} */}
+                {project.demo && project.demo.length > 0 && (
+                  <Link href={project.demo} target="_blank">
+                    <button className="flex items-center bg-[#a681cc] p-2 px-4 text-white hover:bg-[#9662cb]">
+                      <BsDisplay size="1.5rem" className="mx-2" /> Demo
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -65,7 +71,7 @@ const Projects = ({ projects }) => {
     </div>
   );
 };
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(
     "https://anandpandey-portfolio.vercel.app/api/getProjects"
   );

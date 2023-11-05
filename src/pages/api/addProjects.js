@@ -14,6 +14,7 @@ export default async function addProjects(req, res) {
       demo,
     });
     await project.save();
+    console.log(project);
     res.status(201).json({
       name: project.name,
       img: project.email,
