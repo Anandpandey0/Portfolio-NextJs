@@ -16,7 +16,7 @@ const About = ({ skills }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {console.log(skills)}
+      {/* {console.log(skills)} */}
       <div className="flex flex-wrap gap-2 justify-evenly items-center">
         <div className="h-1/2 lg:h-full lg:w-1/3 lg:border-2 border-solid  border-black p-4 text-xl font-semibold">
           <p>
