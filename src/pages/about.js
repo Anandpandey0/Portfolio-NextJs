@@ -20,8 +20,8 @@ const About = ({ skills }) => {
       <div className="flex flex-wrap gap-2 justify-evenly items-center">
         <div className="h-1/2 lg:h-full lg:w-1/3 lg:border-2 border-solid  border-black p-4 text-xl font-semibold">
           <p>
-            Hi Everyone, I am Anand Pandey. I am a final year Btech Computer
-            Science student .
+            Hi Everyone, I am Anand Pandey. I am a software developer with about
+            2 years of experience.
           </p>
           <p className="mt-8 text-[#a681cc]">
             &quot; Creating web app clones is not just about copying and pasting
