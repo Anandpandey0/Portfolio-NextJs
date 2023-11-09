@@ -52,7 +52,7 @@ const Projects = ({ projects }) => {
                     <AiFillGithub size="1.5rem" className="mx-2" /> Github
                   </button>
                 </Link>
-                {project.demo && project.demo.length > 0 && (
+                {project.demo && (
                   <Link href={project.demo} target="_blank">
                     <button className="flex items-center bg-[#a681cc] p-2 px-4 text-white hover:bg-[#9662cb]">
                       <BsDisplay size="1.5rem" className="mx-2" /> Demo
