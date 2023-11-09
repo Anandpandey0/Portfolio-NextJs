@@ -6,7 +6,7 @@ const ProjectSchema = new mongoose.Schema({
   img: { type: String },
   desc: { type: String, required: true },
   github: { type: String, required: true, unique: true },
-  demo: { type: String, required: true },
+  demo: { type: String},
 });
 mongoose.models = {};
 const Project = mongoose.model("Project", ProjectSchema);
