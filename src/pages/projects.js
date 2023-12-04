@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Image from "next/image";
 import {
+  Flex,
   Skeleton,
   SkeletonCircle,
   SkeletonText,
@@ -54,7 +55,7 @@ const Projects = () => {
 
       <div className="grid xl:grid-cols-3 lg:grid-cols-2   gap-4 lg:ml-20  ">
         {loading ? (
-          <Stack>
+          <>
             <Skeleton>
               <div className="border-solid border-4  cursor-pointer hover:border-[#a681cc]  lg:w-5/6 w-[90%] h-fit md:h-[100vh]  p-4   block mx-auto shadow-md transition-shadow duration-500 hover:shadow-lg relative"></div>
             </Skeleton>
@@ -64,7 +65,7 @@ const Projects = () => {
             <Skeleton>
               <div className="border-solid border-4  cursor-pointer hover:border-[#a681cc]  lg:w-5/6 w-[90%] h-fit md:h-[100vh]  p-4   block mx-auto shadow-md transition-shadow duration-500 hover:shadow-lg relative"></div>
             </Skeleton>
-          </Stack>
+          </>
         ) : (
           projects.map((project) => (
             <div
