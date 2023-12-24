@@ -31,11 +31,11 @@ const Projects = () => {
         }
 
         const projectsData = await res.json();
-        console.log(projectsData);
+        // console.log(projectsData);
         setProjects(projectsData);
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching projects:", error);
+        // console.error("Error fetching projects:", error);
         setLoading(false);
       }
     };
