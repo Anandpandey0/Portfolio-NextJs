@@ -5,6 +5,8 @@ const CertificationsSchema = new mongoose.Schema({
   provider: { type: String, required: true },
   link: { type: String, required: true },
 });
+
+
 mongoose.models = {};
 const Project = mongoose.model("Certifications", CertificationsSchema);
 

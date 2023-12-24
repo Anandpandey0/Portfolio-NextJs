@@ -6,8 +6,6 @@ export default async function addProjects(req, res) {
     try {
       await connect();
 
-      //   const item = await Cart.find({ userEmail: email });
-      // const cart = await db.collection("carts").findOne({ userEmail });
       const projects = await Project.find();
       res.status(200).json(projects);
     } catch (err) {
